@@ -9,7 +9,6 @@ export ADDI_CFLAGS="-marm"
 
 ./configure --target-os=linux \
 --prefix=$PREFIX --arch=arm \
---disable-doc \
 --enable-shared \
 --disable-static \
 --disable-yasm \
