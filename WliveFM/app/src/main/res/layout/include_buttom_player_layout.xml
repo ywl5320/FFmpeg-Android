@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="150px"
+    android:background="@color/color_white">
+
+    <ImageView
+        android:id="@+id/iv_menu"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20px"
+        android:padding="15px"
+        android:src="@drawable/miniplay_menu_selector"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/iv_menu"
+        android:layout_toLeftOf="@+id/iv_status"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="40px">
+        <TextView
+            android:id="@+id/tv_mini_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="38px"
+            android:text="中国之声"
+            android:textColor="@color/color_333333"
+            android:singleLine="true"/>
+        <TextView
+            android:id="@+id/tv_mini_subname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34px"
+            android:text="千里共良宵"
+            android:textColor="@color/color_666666"
+            android:layout_marginTop="5px"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_status"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:padding="20px"
+        android:src="@drawable/miniplay_play_selector"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20px"/>
+    <ProgressBar
+        android:id="@+id/pb_load"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:padding="20px"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20px"
+        android:indeterminateDrawable="@drawable/miniplay_load_drawable"
+        android:indeterminateOnly="true"
+        android:indeterminateBehavior="repeat"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_ededed"/>
+</RelativeLayout>

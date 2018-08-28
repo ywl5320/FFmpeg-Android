@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ywl5320.wlivefm.MainActivity"
+    android:background="@color/color_ededed">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/include_common_text_title"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipRefresh"
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/ly_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <View
+        android:id="@+id/v_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ly_buttom"
+        android:alpha="0"
+        android:background="@color/color_dark_bg"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_above="@+id/ly_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/ly_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <include
+            layout="@layout/include_buttom_player_layout"/>
+    </RelativeLayout>
+
+</RelativeLayout>

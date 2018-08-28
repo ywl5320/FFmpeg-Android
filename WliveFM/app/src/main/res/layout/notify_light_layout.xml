@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="64dp">
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/temp_notification"
+        android:layout_marginLeft="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/iv_logo"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/ly_action">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:textColor="@color/color_333333"
+            android:text="title"/>
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="@color/color_666666"
+            android:text="title"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/iv_pre"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/nofication_black_pre_selector"
+            android:layout_marginRight="16dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_status"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/nofication_black_play_selector"
+            android:layout_marginRight="16dp"/>
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/nofication_black_next_selector"
+            android:visibility="gone"/>
+    </LinearLayout>
+</RelativeLayout>

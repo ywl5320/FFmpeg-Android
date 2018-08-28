@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/title"
+        layout="@layout/include_common_text_title"/>
+    <com.ywl5320.wlivefm.widget.bar.NavitationFollowScrollLayout
+        android:id="@+id/nfsl_bar"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@color/color_white"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_below="@+id/nfsl_bar"
+        android:layout_above="@+id/ly_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:id="@+id/v_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ly_buttom"
+        android:alpha="0"
+        android:visibility="gone"
+        android:background="@color/color_dark_bg"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_above="@+id/ly_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/color_white"/>
+
+    <LinearLayout
+        android:id="@+id/ly_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <include
+            layout="@layout/include_buttom_player_layout"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
