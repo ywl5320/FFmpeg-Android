@@ -2,6 +2,7 @@
 ## [我的视频课程（基础）：《（NDK）FFmpeg打造Android万能音频播放器》](https://edu.csdn.net/course/detail/6842)
 ## [我的视频课程（进阶）：《（NDK）FFmpeg打造Android视频播放器》](https://edu.csdn.net/course/detail/8036)
 ## [我的视频课程（编码直播推流）：《Android视频编码和直播推流》](https://edu.csdn.net/course/detail/8942)
+## [我的视频课程（C++ OpenGL）：《Android C++ OpenGL》](https://edu.csdn.net/course/detail/19367)
 
 ## 实例(WliveFM-完成了一些功能,后续不会更新了，新的项目可以看我的:[wlmusic](https://github.com/wanliyang1990/wlmusic))
 ![image](https://github.com/wanliyang1990/FFmpeg-Android/blob/master/imgs/sample1.png)<br/>
